@@ -1,3 +1,6 @@
 [submodule "users-svc"]
 	path = users-svc
 	url = ./users-svc/
+[submodule "api-gateway"]
+	path = api-gateway
+	url = ./api-gateway/
