@@ -4,3 +4,9 @@
 [submodule "api-gateway"]
 	path = api-gateway
 	url = git@gitlab.com:spoonfedweb-microservices/api-gateway.git
+[submodule "classifieds-app"]
+	path = classifieds-app
+	url = git@gitlab.com:spoonfedweb-microservices/classifieds-app.git
+[submodule "listings-svc"]
+	path = listings-svc
+	url = git@gitlab.com:spoonfedweb-microservices/listings-svc.git
