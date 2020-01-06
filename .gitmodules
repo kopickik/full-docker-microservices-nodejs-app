@@ -1,6 +1,6 @@
 [submodule "users-svc"]
 	path = users-svc
-	url = ./users-svc/
+	url = git@gitlab.com:spoonfedweb-microservices/users-svc.git
 [submodule "api-gateway"]
 	path = api-gateway
-	url = ./api-gateway/
+	url = git@gitlab.com:spoonfedweb-microservices/api-gateway.git
