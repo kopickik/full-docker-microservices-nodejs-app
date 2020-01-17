@@ -24,6 +24,8 @@ services:
       - users-svc-db
     environment:
       - DB_URL=mysql://root:VQTnFnwGbO@users-svc-db/db?charset=UTF8
+    ports:
+      - 7101:7101
     volumes:
       - ./users-svc:/opt/app
 
