@@ -1,5 +1,18 @@
 version: "3"
 services:
+
+  api-gateway:
+    build: "./api-gateway"
+    depends_on:
+      - listings-svc
+      - users-svc
+    # environment:
+      # - DB_URL=mysql://root:VQTmFnwGbO@listings-svc-db/db?charset=UTF8
+    ports:
+      - 7000:7000
+    volumes:
+      - ./api-gateway:/opt/app
+
   listings-svc:
     build: "./listings-svc"
     depends_on:
@@ -28,7 +41,6 @@ services:
       - 7101:7101
     volumes:
       - ./users-svc:/opt/app
-
   users-svc-db:
     environment:
       - MYSQL_ROOT_PASSWORD=VQTnFnwGbO
